@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h3>Register</h3>
+        <form action="" method="post">
+            <div class="input">
+                <label for="npm">NPM</label>
+                <input type="text" name="npm" id="npm" placeholder="202310017">
+            </div>
+            <div class="input">
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" id="fullname" placeholder="John Doe">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="*******">
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="*******">
+            </div>
+            <div class="input">
+                <label for="place_birth">Place Birth</label>
+                <input type="text" name="place_birth" id="place_birth" placeholder="Bogor">
+            </div>
+            <div class="input">
+                <label for="birthdate">Birthdate</label>
+                <input type="date" name="birthdate" id="birthdate" placeholder="">
+            </div>
+            <div class="input">
+                <label for="gender">Gender</label>
+                <div class="radio-button">
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male">
+                        Male
+                    </label>
+                </div>
+                <div class="radio-button">
+                    
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <div class="input">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="5" rows="5" placeholder="example : Padjajaran Street No. 10"></textarea>
+            </div>
+            <div class="input-button">
+                <button type="button" onclick="document.location.href='login.html'">Cancel</button>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

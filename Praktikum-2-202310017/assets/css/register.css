@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main {
+    width: 400px;
+    height: auto;
+    margin: 50px auto;
+    background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    padding-bottom: 20px;
+}
+
+.main > h3 {
+    color: #fff;
+    font-size: 37px;
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 8px;
+    border: 1px solid #3A6073;
+    border-radius: 4px;
+    margin: 20px 30px;
+    transition: 0.3s;
+}
+
+.input > input, .input > textarea {
+    outline: 0;
+    border: 0;
+    padding: 4px 0 0;
+    font-size: 14px;
+    background: rgba(22, 34, 42, 0);
+    color: #d0dede;
+}
+
+.input > label, .radio-button > label {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.radio-button > label {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.input:focus-within {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.input-button {
+    display: flex;
+    justify-content: right;
+    margin: 20px 30px;
+}
+
+.input-button > button[type="button"] {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #3A6073;
+    border-radius: 4px;
+    outline: none;
+    background: rgba(22, 34, 42, 0);
+    color: #d0dede;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input-button > button {
+    padding: 8px 12px;
+    border: 1px solid #d0dede;
+    border-radius: 4px;
+    outline: none;
+    background: #d0dede;
+    color: #3A6073;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input-button > button:hover {
+    border-color: #3A6073;
+    background: #3A6073;
+    color: #d0dede;
+}
+
