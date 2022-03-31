@@ -53,7 +53,8 @@ body {
     transition: 0.3s;
 }
 
-.input > input, .input > textarea {
+.input > input, 
+.input > textarea {
     outline: 0;
     border: 0;
     padding: 4px 0 0;
@@ -63,7 +64,9 @@ body {
     color: #d0dede;
 }
 
-.input > label, .radio-button > label, .login {
+.input > label, 
+.radio-button > label, 
+.login {
     font-size: 11px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -129,4 +132,9 @@ body {
 
 .login > p > a{
     color: #3A6073;
+}
+
+.login > p > a:hover {
+    color: #d0dede;
+    text-decoration: none;
 }
